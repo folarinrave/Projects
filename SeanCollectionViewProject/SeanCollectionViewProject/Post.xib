@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="FZc-Ij-8nX" customClass="RedditCollectionViewCell" customModule="SeanCollectionViewProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="296"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Dxj-cm-TGY">
+                <rect key="frame" x="0.0" y="0.0" width="271" height="296"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtU-QN-dg5">
+                        <rect key="frame" x="5" y="5" width="261" height="286"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="PtU-QN-dg5" secondAttribute="bottom" constant="5" id="7q2-0l-TAc"/>
+                    <constraint firstAttribute="trailing" secondItem="PtU-QN-dg5" secondAttribute="trailing" constant="5" id="BKA-gS-CAZ"/>
+                    <constraint firstItem="PtU-QN-dg5" firstAttribute="top" secondItem="Dxj-cm-TGY" secondAttribute="top" constant="5" id="JUM-VW-R4M"/>
+                    <constraint firstItem="PtU-QN-dg5" firstAttribute="leading" secondItem="Dxj-cm-TGY" secondAttribute="leading" constant="5" id="c4v-87-Igh"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+            <size key="customSize" width="271" height="296"/>
+            <connections>
+                <outlet property="postLabel" destination="PtU-QN-dg5" id="aQu-Mt-dBT"/>
+            </connections>
+            <point key="canvasLocation" x="-877.536231884058" y="85.714285714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
